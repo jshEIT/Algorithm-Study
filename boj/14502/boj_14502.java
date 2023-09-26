@@ -12,6 +12,7 @@ public class boj_14502 {
 		}
 	}
 	
+	// 처음에 ArrayIndexOutofRangeException이 계속 뜸 --> N x M 좌표임을 망각했기 때문
 	static int N,M; // 행,열 길이
 	static int[][] map; // 입력 좌표를 담을 배열
 	static boolean[][] isNotSafe; // 복사할 생각하지 말고 방문 배열을 만들어서 체크하는 것이 효율적일듯
