@@ -22,6 +22,7 @@ public class boj_1149 {
 				rgb[i][j] = Integer.parseInt(st.nextToken());
 		}
 		
+		// 필요한 정보를 역으로 추적
 		for(int i = 1; i <= N; i++) {
 			// 상황 별로 마지막 벽이 각각 R,G,B인 경우
 			dp[i][0] = Math.min(dp[i - 1][1],dp[i - 1][2]) + rgb[i][0]; // 마지막 벽이 R - 직전의 벽이 G,B인 것인 중 가장 작은 값
