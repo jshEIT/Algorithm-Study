@@ -9,7 +9,7 @@ public class boj_2579 {
 		
 		int N = Integer.parseInt(br.readLine().trim());
 		
-		int[] dp = new int[300 + 1];
+		int[] dp = new int[300 + 1]; // N+1로 두면 런타임 에러가 뜬다.
 		int[] stairs = new int[300 + 1];
 		for (int i = 1; i <= N; i++)
 			stairs[i] = Integer.parseInt(br.readLine().trim());
